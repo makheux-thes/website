@@ -1,0 +1,24 @@
+{
+    "name" : "makheux-thes",
+    "require" : {
+        "twitter/bootstrap": "dev-3.0.0-wip",
+        "symfony/symfony": "2.1.*@dev",
+        "doctrine/orientdb-odm": "1.0.0-beta6"
+    },
+    "require-dev": {
+	"claylo/selenium-server-standalone": "dev-master",
+        "phpunit/phpunit": "3.7.*",
+        "phpunit/phpunit-selenium": ">=1.2",
+        "phpunit/phpunit-story": "*",
+        "phpunit/php-invoker": "*",
+        "phpspec/phpspec2": "*",
+        "phpmd/phpmd" : "1.4.0",
+        "squizlabs/php_codesniffer": "1.*",
+        "pdepend/pdepend" : "1.1.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {"psr-0": {"": "src"}},
+    "minimum-stability": "dev"
+}
