@@ -1,3 +1,9 @@
+
+.*
+._*
+composer.lock
+vendor/*
+bin/*
 # Bootstrap
 app/bootstrap*
 
