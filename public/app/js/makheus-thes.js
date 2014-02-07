@@ -1,27 +1,22 @@
 angular.module('makheux-thes', [
-  'ngRoute', 
-//  'ngDragDrop',
+  'ngRoute',
   'makheuxThesControllers',
-  'makheuxThesFilters', 
+  'makheuxThesFilters',
   'makheuxThesServices'
-]);
-
-angular.module('makheux-thes').config(['$locationProvider', '$routeProvider', '$interpolateProvider',
+]).config(['$locationProvider', '$routeProvider', '$interpolateProvider',
   function($locationProvider, $routeProvider, $interpolateProvider) {
     $interpolateProvider.startSymbol('{[{').endSymbol('}]}');
     $locationProvider.html5Mode(true).hashPrefix('!');
     $routeProvider.
-      when('/pomodoros', {
-        templateUrl: 'app/partials/pomodoro-list.html',
-        controller: 'PomodoroListCtrl'
+      when('/tasks', {
+        controller: 'TaskListCtrl'
       }).
-      when('/pomodoros/:pomodoroId', {
-        templateUrl: 'app/partials/pomodoro-detail.html',
-        controller: 'PomodoroDetailCtrl'
+      when('/tasks/:taskId', {
+        templateUrl: 'app/partials/task-detail.html',
+        controller: 'TaskDetailCtrl'
       }).
       otherwise({
-        redirectTo: '/pomodoros'
+        redirectTo: '/tasks'
       });
-
   }
 ]);

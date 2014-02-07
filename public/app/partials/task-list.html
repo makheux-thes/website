@@ -1,0 +1,7 @@
+          <ul class="tasks">
+            <li ng-repeat="task in tasks | filter:query | orderBy:orderProp" class="thumbnail">
+              <a href="#!/tasks/{[{task.id}]}" class="thumb"><img ng-src="{[{task.imageUrl}]}"></a>
+              <a href="#!/tasks/{[{task.id}]}">{[{task.title}]}</a>
+              <p>{[{task.src}]}</p>
+            </li>
+          </ul>
