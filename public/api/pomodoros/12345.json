@@ -1,0 +1,9 @@
+{
+    "id": 12345,
+    "title": "Some homework",
+    "description": "Get on with it",
+    "provider": {
+        "name": "Google",
+        "id":   "bhanlon@inviqa.com"
+    }
+}

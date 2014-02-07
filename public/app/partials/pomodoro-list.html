@@ -1,0 +1,7 @@
+          <ul class="pomodoros">
+            <li ng-repeat="pomodoro in pomodoros | filter:query | orderBy:orderProp" class="thumbnail">
+              <a href="#!/pomodoros/{[{pomodoro.id}]}" class="thumb"><img ng-src="{[{pomodoro.imageUrl}]}"></a>
+              <a href="#!/pomodoros/{[{pomodoro.id}]}">{[{pomodoro.title}]}</a>
+              <p>{[{pomodoro.src}]}</p>
+            </li>
+          </ul>
